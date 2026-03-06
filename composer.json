@@ -1,0 +1,52 @@
+{
+    "name": "yebto/numerology-api",
+    "description": "PHP SDK for the YEB Numerology API. Life path, personality, expression numbers and predictions.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "yeb",
+        "api",
+        "sdk",
+        "laravel",
+        "php",
+        "numerology",
+        "numbers",
+        "prediction"
+    ],
+    "homepage": "https://yeb.to",
+    "support": {
+        "email": "support@yeb.to",
+        "issues": "https://github.com/yebto/numerology-api/issues",
+        "source": "https://github.com/yebto/numerology-api"
+    },
+    "authors": [
+        {
+            "name": "NETOX Ltd.",
+            "email": "support@yeb.to",
+            "homepage": "https://yeb.to",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "yebto/api-client": "^1.0"
+    },
+    "suggest": {
+        "illuminate/support": "Required for Laravel Facade & ServiceProvider integration (^10.0|^11.0|^12.0)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yebto\\NumerologyAPI\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yebto\\NumerologyAPI\\NumerologyAPIServiceProvider"
+            ],
+            "aliases": {
+                "NumerologyAPI": "Yebto\\NumerologyAPI\\Facades\\NumerologyAPI"
+            }
+        }
+    }
+}
